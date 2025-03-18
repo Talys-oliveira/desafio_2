@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2</title>
+    <title>Paws n'Play</title>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <div class="logo"><strong>Paws n' Play</strong></div>    
-            <ul class="nav-links">  <!--Criando as classes-->
+            <img src="./img/Vector.png" alt="">
+             <h1>Paws n'Play</h1>  
+             <a class="menu-toggle" id="menu-toggle"  aria-expanded="true" onclick="clickMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F3F3F3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+             </a>
+             
+            <ul class="nav-links" id="nav-links">  <!--Criando as classes-->
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#About Us">About Us</a></li>
                 <li><a href="#Blog">Blog</a></li>
                 <li><a href="#Contact">Contact</a></li>    
-                <a href="#" class="get-started">Get Started</a>          
+                         
             </ul>
+            <a href="#" class="get-started">Get Started</a>
         </nav>
+        
     </header>
     <main>
         <section class="hero">
@@ -26,28 +38,39 @@
 
             <p>Welcome to Paws n' Play, the ultimate destination for pet levers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"</p>
 
-            <a href="#" class="shop-btn">Shop Now</a>
+            <a href="#" class="shop-btn">Shop Now<img src="img/Vector.png" alt="patas"></a>
             </div>
-            <div class="hero-image">
-                <img src="" alt="cachorro">
-            </div>
+            
         </section>
+
         <section id="Shop">
+            <img src="./img/fluent-emoji-flat_paw-prints.png" alt="patas" id="pata-image">
             <h2>Shop</h2>
+            
+            <img src="./img/ic_baseline-search.png" alt="Search" id="search-image">
+            
+            
             <h3>Featured Products</h3>
+            
             <ul>
-                <li><a href="Random">Random</a></li>
-                <li><a href="Cat">Cat</a></li>
+               
+                <li><a href="Random" id="random-image">Random</a></li>
+                <li><a href="Cat" id="cat-image">Cat</a></li>
                 <li><a href="Dogs">Dogs</a></li>
                 <li><a href="Fish">Fish</a></li>
                 <li><a href="Birds">Birds</a></li>
+                
             </ul>
             
-                <img src="" alt="Products">
-                <img src="" alt="Products">
-                <img src="" alt="Products">
-                <h3>View More</h3>
+            <div class="product-grid">
+
+            <img src="img/Product Card.png" alt="Products">
+            <img src="img/Product Car.png" alt="Products">
             
+            </div>
+            <img src="img/Product Ca.png" alt="Products">
+                <a href="#" class="View More">View More</a>
+        </section>   
         <section class="services">
             <h2>Services</h2>
             <div class="services-grid">
@@ -83,21 +106,21 @@
             But our commitment doesn't end there. We're dedicated to fostering a community that celebrates the bond between pets and their human companions. Through educational resources, compassionate support, and memorable experiences, we strive to empower pet owners to provide the best possible care for their furry family members.
             At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized recommendations to attentive service, we're here to make your journey with your pet as joyful and fulfilling as possible.
             Join us in our mission to create a world where every pet is cherished, every need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds.</p>
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="./img/Weestar_hyperrealistic_food_photography_a_rushton_food_toy_pet__7c9c8610-ba6a-4e9f-9005-12c111c3ce85.png" alt="">
+            <img src="./img/Weestar_hyperrealistic_food_photography_a_rushton_food_toy_pet__bbc097b5-ba43-470f-a855-9f5b3545b7ea.png" alt="">
         </section>
-        <section>
+        <section id="Our team">
             <h2>Our Team</h2>
-            <img src="" alt="Dr. Olivia Rhye">
-            <p>Semior Veterinarian</p>
+            <img src="./img/unsplash_DEQAyBEDRQE.png" alt="Dr. Olivia Rhye">
+            <p>Senior Veterinarian</p>
             <img src="" alt="">
-            <img src="" alt="Phoenix Baker">
+            <img src="./img/unsplash_O13B7suRG4A.png" alt="Phoenix Baker">
             <p>Asst. Veterinarian</p>
-            <img src="" alt="">
+            <img src="./img/unsplash_E6Vo_4i-3Xg.png" alt="">
             <img src="" alt="lana Steiner">
             <p>Resident Veterinarian</p>
             <img src="" alt="">
-            <img src="" alt="Wilkinson">
+            <img src="./img/unsplash_eGbmOTQxF04.png" alt="Wilkinson">
             <p>Intern Veterinarian</p>
             <img src="" alt="">
             
@@ -135,7 +158,7 @@
                 <button type="submit">Send message</button>      
             </form>
             
-            <section>  <!--Acrescentei uma section e article para as formas de contatos e endereço-->
+            <section id="">  <!--Acrescentado uma section e article para as formas de contatos e endereço-->
                 <article>
                     <h3>Email</h3>
                     <p>Our friendly team is help.</p>
@@ -157,17 +180,15 @@
                     <p><strong>+234 901234 384</strong></p>
                 </article>
             </section>
-
-
         </section>
-        <section>
+        <section id="Join our newslatter">
             <h2>Join our newsletter</h2>
             <p>Be the first to receive latest updates on promo, sales and offers</p>
             <label for="email"></label>
             <input type="text" id="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </section>
-        <section>
+        <section id="Paws n'play">
             <h2>Paws n'Play</h2>
             <p>Where wagging tails and purring hearts <br>reign supreme!</p>
             
@@ -216,13 +237,22 @@
     </main>
     <footer>
         <p>&copy; 2025 Paws n' Play. All rights reserved.</p>
-        <img src="" alt="Twitter">
+        <img src="img/Vector2.png" alt="Twitter">
         <img src="" alt="Linkedin">
         <img src="" alt="Facebook">
         <img src="" alt="github">
         <img src="" alt="icone">
-        <img src="" alt="icone">
+        <img src="img/Vector3.png" alt="icone">
     </footer>
+    <script>
+        document
+        .getElementById('menu-toggle')
+        .addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+            document.getElementById('menu-toggle').ariaExpanded = document.getElementById('menu-toggle').ariaExpanded === 'true' ? 'false' : 'true';
+            
+        });
+    </script>
     
 </body>
 </html>
